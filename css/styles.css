@@ -1,0 +1,804 @@
+header {
+  display: flex;
+  background-image: white;
+  background-image: linear-gradient(180deg, white 70%, #ffd8d0 100%);
+  box-shadow: 3px 3px 3px 1px rgba(112, 112, 112, 0.4); }
+  header .header__menu {
+    display: flex;
+    color: #BC422B; }
+    header .header__menu nav {
+      display: flex; }
+      header .header__menu nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        margin: 5px;
+        align-items: center; }
+        header .header__menu nav ul li {
+          display: flex;
+          margin: 10px; }
+          header .header__menu nav ul li a {
+            display: flex;
+            font-weight: 700;
+            color: #BC422B;
+            text-decoration: none; }
+            header .header__menu nav ul li a:hover {
+              transform: scale(1.1); }
+  header .header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px; }
+    header .header__logo .contenedor__logo {
+      display: flex;
+      width: 80%;
+      justify-content: center; }
+      header .header__logo .contenedor__logo .logo {
+        width: 20%; }
+        header .header__logo .contenedor__logo .logo:hover {
+          transform: scale(1.1); }
+
+footer {
+  display: flex;
+  background-color: #FFF7F6;
+  width: 100%;
+  margin: 40px 0px 0px 0px;
+  padding: 0px; }
+  footer .footer__redes {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 30px; }
+    footer .footer__redes .footer__logo {
+      width: 50%; }
+      footer .footer__redes .footer__logo:hover {
+        transform: scale(1.1); }
+    footer .footer__redes .footer__iconos {
+      display: flex;
+      flex-direction: row; }
+      footer .footer__redes .footer__iconos .icono {
+        width: 70%; }
+        footer .footer__redes .footer__iconos .icono:hover {
+          transform: scale(1.2); }
+  footer .footer__menu {
+    display: flex;
+    flex-direction: column; }
+    footer .footer__menu .categorias {
+      display: flex;
+      flex-direction: row;
+      color: #BC422B; }
+      footer .footer__menu .categorias .footer__div {
+        margin: 15px; }
+        footer .footer__menu .categorias .footer__div ul {
+          display: flex;
+          flex-direction: column; }
+          footer .footer__menu .categorias .footer__div ul li {
+            display: flex;
+            margin: 10px; }
+            footer .footer__menu .categorias .footer__div ul li a {
+              display: flex;
+              font-weight: 500;
+              color: #BC422B;
+              text-decoration: none; }
+              footer .footer__menu .categorias .footer__div ul li a:hover {
+                transform: scale(1.1); }
+        footer .footer__menu .categorias .footer__div p:hover {
+          transform: scale(1.1); }
+    footer .footer__menu .footer__derechos {
+      display: flex;
+      justify-content: center;
+      color: #BC422B; }
+
+.producto__main {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 8rem 0rem 8rem; }
+
+.producto__contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; }
+  .producto__contenedor .titulo-oculto {
+    display: none;
+    margin: 0px;
+    color: #BC422B;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: larger; }
+  .producto__contenedor .detalle-imagenes {
+    width: 100%;
+    margin: 30px; }
+    .producto__contenedor .detalle-imagenes .imagen-grande .foto-producto {
+      width: 90%;
+      border-radius: 20px;
+      margin-left: 10px; }
+    .producto__contenedor .detalle-imagenes .imagenes {
+      display: flex;
+      flex-direction: row; }
+      .producto__contenedor .detalle-imagenes .imagenes .fotochica {
+        width: 20%;
+        margin: 10px;
+        border-radius: 20px; }
+        .producto__contenedor .detalle-imagenes .imagenes .fotochica:hover {
+          transform: scale(2); }
+  .producto__contenedor .detalle-descripcion {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 70%; }
+    .producto__contenedor .detalle-descripcion h1 {
+      color: #BC422B;
+      font-family: "Raleway", sans-serif; }
+    .producto__contenedor .detalle-descripcion p {
+      font-family: "Poppins", sans-serif;
+      color: #525252;
+      font-size: 16px;
+      font-weight: 300; }
+    .producto__contenedor .detalle-descripcion ul {
+      padding: 0px; }
+      .producto__contenedor .detalle-descripcion ul .caracteristica {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .producto__contenedor .detalle-descripcion ul .caracteristica .tilde {
+          display: flex;
+          width: 16px;
+          height: 16px; }
+        .producto__contenedor .detalle-descripcion ul .caracteristica li {
+          display: flex;
+          margin: 10px 0px 10px 5px;
+          font-family: "Poppins", sans-serif;
+          font-size: 1rem;
+          color: #525252;
+          font-size: 16px;
+          font-weight: 300;
+          text-decoration: none; }
+    .producto__contenedor .detalle-descripcion .boton {
+      padding: 15px 25px 15px 25px;
+      margin: 10px;
+      border-radius: 25px;
+      background-image: linear-gradient(90deg, #f2d1d1 0%, #d6492b 30%);
+      color: white;
+      border: none; }
+      .producto__contenedor .detalle-descripcion .boton:hover {
+        transform: scale(1.1); }
+
+.producto__similares .titulo__similares {
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  margin: 30px 0px 20px 0px;
+  color: #525252; }
+
+.producto__similares .juguetes__similares {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .producto__similares .juguetes__similares .card__similares {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 1px rgba(152, 151, 151, 0.2);
+    padding: 5px;
+    margin: 15px;
+    border: 2px;
+    border-style: solid;
+    border-color: #C8C8C8;
+    border-radius: 18px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    width: 20%; }
+    .producto__similares .juguetes__similares .card__similares .card__consultanos {
+      display: flex;
+      justify-content: center; }
+    .producto__similares .juguetes__similares .card__similares .imagen__juguete {
+      width: 100%;
+      border-radius: 18px; }
+    .producto__similares .juguetes__similares .card__similares h5 {
+      margin: 10px 5px 5px 5px;
+      font-size: 1rem;
+      color: #343434; }
+    .producto__similares .juguetes__similares .card__similares p {
+      margin: 0px 0px 0px 5px;
+      font-size: 0.8rem;
+      color: #343434; }
+
+.producto__similares .boton__similares {
+  display: flex;
+  justify-content: center; }
+  .producto__similares .boton__similares .boton {
+    padding: 15px 25px 15px 25px;
+    margin: 10px 10px 50px 10px;
+    border-width: 1px;
+    border-radius: 25px;
+    background-color: white;
+    border-color: #D6492B;
+    color: #D6492B; }
+    .producto__similares .boton__similares .boton:hover {
+      transform: scale(1.1);
+      color: white;
+      background-color: #D6492B;
+      border: none; }
+
+@media (min-width: 721px) and (max-width: 991px) {
+  .producto__contenedor {
+    display: flex;
+    flex-direction: column; }
+    .producto__contenedor .titulo-oculto {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-size: 25px;
+      margin: 30px 0px 0px 0px; }
+    .producto__contenedor .detalle-imagenes .imagen-grande .foto-producto {
+      margin: 0px; }
+    .producto__contenedor .detalle-imagenes .imagenes {
+      display: none; }
+    .producto__contenedor .detalle-descripcion {
+      display: flex;
+      width: 100%; }
+      .producto__contenedor .detalle-descripcion h1 {
+        display: none; }
+    .producto__contenedor .boton-producto {
+      display: flex;
+      justify-content: center; }
+  .producto__similares .titulo__similares {
+    margin: 0px; }
+  .producto__similares .juguetes__similares {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .producto__similares .juguetes__similares .card__similares {
+      width: 50%; }
+  .producto__similares .boton__similares .boton {
+    margin: 0px;
+    padding: 20px 35px 20px 35px;
+    border-radius: 20px;
+    font-size: 15px; }
+  .producto__footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .producto__footer .footer__menu {
+      display: flex; }
+      .producto__footer .footer__menu .categorias {
+        display: flex;
+        flex-direction: column; }
+        .producto__footer .footer__menu .categorias .footer__div {
+          display: none; }
+    .producto__footer .footer__redes {
+      display: flex;
+      margin: 0px;
+      width: 100%;
+      align-items: center; }
+      .producto__footer .footer__redes a {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0px 10px 0px; }
+        .producto__footer .footer__redes a .footer__logo {
+          width: 30%; }
+          .producto__footer .footer__redes a .footer__logo:hover {
+            transform: scale(1); } }
+
+@media (min-width: 540px) and (max-width: 720px) {
+  .producto__contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px 0px 0px; }
+    .producto__contenedor .titulo-oculto {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-size: 25px; }
+    .producto__contenedor .detalle-imagenes .imagen-grande .foto-producto {
+      margin: 0px; }
+    .producto__contenedor .detalle-imagenes .imagenes {
+      display: none; }
+    .producto__contenedor .detalle-descripcion {
+      display: flex;
+      width: 100%; }
+      .producto__contenedor .detalle-descripcion h1 {
+        display: none; }
+    .producto__contenedor .boton-producto {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0px; }
+  .producto__similares .juguetes__similares {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .producto__similares .juguetes__similares .card__similares {
+      width: 60%; }
+  .producto__footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .producto__footer .footer__menu {
+      display: flex; }
+      .producto__footer .footer__menu .categorias {
+        display: flex;
+        flex-direction: column; }
+        .producto__footer .footer__menu .categorias .footer__div {
+          display: none; }
+    .producto__footer .footer__redes {
+      display: flex;
+      margin: 0px;
+      width: 100%;
+      align-items: center; }
+      .producto__footer .footer__redes a {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0px 10px 0px; }
+        .producto__footer .footer__redes a .footer__logo {
+          width: 30%; }
+          .producto__footer .footer__redes a .footer__logo:hover {
+            transform: scale(1); } }
+
+@media (min-width: 320px) and (max-width: 539px) {
+  .producto__main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px; }
+  .producto__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px; }
+    .producto__contenedor .titulo-oculto {
+      display: flex;
+      justify-content: center; }
+    .producto__contenedor .detalle-imagenes {
+      display: flex;
+      flex-direction: column; }
+      .producto__contenedor .detalle-imagenes .imagen-grande {
+        display: flex;
+        justify-content: center; }
+        .producto__contenedor .detalle-imagenes .imagen-grande .foto-producto {
+          width: 100%;
+          display: flex;
+          border-radius: 20px;
+          margin: 0px; }
+      .producto__contenedor .detalle-imagenes .imagenes {
+        display: none; }
+    .producto__contenedor .detalle-descripcion {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 0px; }
+      .producto__contenedor .detalle-descripcion .boton-producto {
+        display: flex;
+        justify-content: center; }
+        .producto__contenedor .detalle-descripcion .boton-producto:hover {
+          transform: scale(1); }
+      .producto__contenedor .detalle-descripcion h1 {
+        display: none; }
+  .producto__similares {
+    display: flex;
+    flex-direction: column; }
+    .producto__similares .titulo__similares {
+      margin: 25px 0px 0px 0px; }
+    .producto__similares .juguetes__similares {
+      display: flex;
+      flex-direction: column;
+      align-content: center; }
+      .producto__similares .juguetes__similares .card__similares {
+        display: flex;
+        width: 60%; }
+  .producto__footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .producto__footer .footer__menu {
+      display: flex; }
+      .producto__footer .footer__menu .categorias {
+        display: flex;
+        flex-direction: column; }
+        .producto__footer .footer__menu .categorias .footer__div {
+          display: none; }
+    .producto__footer .footer__redes {
+      display: flex;
+      margin: 0px;
+      width: 100%;
+      align-items: center; }
+      .producto__footer .footer__redes a {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0px 10px 0px; }
+        .producto__footer .footer__redes a .footer__logo {
+          width: 50%; }
+          .producto__footer .footer__redes a .footer__logo:hover {
+            transform: scale(1); } }
+
+body {
+  margin: 0px;
+  padding: 0px; }
+
+.index__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px; }
+
+.index__inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px;
+  padding: 20px; }
+  .index__inicio .inicio__texto {
+    display: flex;
+    flex-direction: column;
+    width: 60%; }
+    .index__inicio .inicio__texto h1 {
+      font-family: "Raleway", sans-serif;
+      font-size: 3rem;
+      color: #525252; }
+    .index__inicio .inicio__texto p {
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      color: #525252;
+      font-size: 16px;
+      font-weight: 300; }
+    .index__inicio .inicio__texto .boton1 {
+      padding: 15px 25px 15px 25px;
+      margin: 10px;
+      border-radius: 25px;
+      background-image: linear-gradient(90deg, #f2d1d1 0%, #d6492b 30%);
+      color: white;
+      border: none; }
+      .index__inicio .inicio__texto .boton1:hover {
+        transform: scale(1.1); }
+    .index__inicio .inicio__texto .boton2 {
+      padding: 15px 25px 15px 25px;
+      border-radius: 20px;
+      background-color: white;
+      border: none;
+      color: #D6492B;
+      margin: 5px; }
+      .index__inicio .inicio__texto .boton2:hover {
+        transform: scale(1.1); }
+  .index__inicio .inicio__imagen {
+    display: flex;
+    justify-content: center; }
+    .index__inicio .inicio__imagen .img_principal {
+      width: 60%;
+      border-radius: 18px;
+      margin: 40px; }
+  .index__inicio .titulo-oculto {
+    display: none; }
+
+.index__catalogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../recursos/imagenes/index/fondo-catalogo.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80%;
+  border-radius: 20% 20% -20% -20%; }
+  .index__catalogo .catalogo__titulo {
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.8rem;
+    color: #525252; }
+  .index__catalogo .catalogo__categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 70px 40px 70px 40px; }
+    .index__catalogo .catalogo__categorias .card__catalogo {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 70px 30px 70px;
+      margin: 20px;
+      border-style: solid;
+      border-color: rgba(243, 206, 202, 0.4);
+      border-width: 2px;
+      box-shadow: 2px 2px 2px 1px rgba(243, 206, 202, 0.4);
+      border-radius: 18px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      align-items: center;
+      width: 20%; }
+      .index__catalogo .catalogo__categorias .card__catalogo .logo__catalogo {
+        width: 80px;
+        height: 80px;
+        margin: 10px; }
+      .index__catalogo .catalogo__categorias .card__catalogo:hover {
+        transform: scale(1.1); }
+
+.index__juguetes {
+  margin: 50px; }
+  .index__juguetes .titulo__juguetes {
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    margin: 50px 0px 20px 0px;
+    color: #525252; }
+  .index__juguetes .juguetes__categorias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 40px 0px 40px; }
+    .index__juguetes .juguetes__categorias a {
+      display: flex;
+      width: 25%;
+      text-decoration: none; }
+      .index__juguetes .juguetes__categorias a .card__juguetes {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 2px #d9d8d8;
+        padding: 5px;
+        margin: 15px;
+        border-style: solid;
+        border-color: #C8C8C8;
+        border-radius: 18px;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        width: 100%; }
+        .index__juguetes .juguetes__categorias a .card__juguetes .card__consultanos {
+          display: flex;
+          justify-content: center; }
+        .index__juguetes .juguetes__categorias a .card__juguetes .imagen__juguete {
+          width: 100%;
+          border-radius: 18px; }
+        .index__juguetes .juguetes__categorias a .card__juguetes h5 {
+          margin: 10px 5px 5px 5px;
+          font-size: 1rem;
+          color: #343434; }
+        .index__juguetes .juguetes__categorias a .card__juguetes p {
+          margin: 0px 0px 0px 5px;
+          font-size: 0.8rem;
+          color: #343434; }
+      .index__juguetes .juguetes__categorias a:hover {
+        transform: scale(1.1); }
+  .index__juguetes .boton__similares {
+    display: flex;
+    justify-content: center; }
+    .index__juguetes .boton__similares .boton {
+      padding: 15px 25px 15px 25px;
+      margin: 10px 10px 50px 10px;
+      border-width: 1px;
+      border-radius: 25px;
+      background-color: white;
+      border-color: #D6492B;
+      color: #D6492B; }
+      .index__juguetes .boton__similares .boton:hover {
+        transform: scale(1.1);
+        color: white;
+        background-color: #D6492B;
+        border: none; }
+
+.index__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  /*background-image: url(../recursos/imagenes/index/fondoinfo.png);*/ }
+  .index__info img {
+    width: 20%; }
+  .index__info .info__categorias {
+    display: flex;
+    flex-direction: row; }
+    .index__info .info__categorias .card__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      margin: 20px;
+      width: 40%;
+      font-family: "Poppins", sans-serif; }
+      .index__info .info__categorias .card__info:hover {
+        transform: scale(1.1); }
+      .index__info .info__categorias .card__info h5 {
+        color: black;
+        font-size: 1.2rem;
+        margin: 15px 0px 10px 0px; }
+      .index__info .info__categorias .card__info p {
+        display: flex;
+        color: #525252;
+        font-size: 1rem;
+        margin: 10px 0px 10px 0px; }
+
+.index__contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  align-items: center; }
+  .index__contenedor .img__contenedor {
+    width: 60%; }
+  .index__contenedor p {
+    text-align: justify;
+    font-family: "DM Sans", sans-serif;
+    color: #525252;
+    width: 85%;
+    font-size: larger; }
+  .index__contenedor h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    color: #102437; }
+  .index__contenedor h1 {
+    font-family: "Raleway", sans-serif;
+    color: #525252;
+    justify-items: center;
+    font-size: 2.3rem; }
+
+.index__contenedortitulo:first-child {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center; }
+
+.index__desarrollo-oculto:nth-child(2) {
+  display: none; }
+
+.index__desarrolloimg:nth-child(3) {
+  grid-column: 1/2;
+  display: flex; }
+
+.index__desarrollo:nth-child(4) {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column; }
+
+.index__reciclado-oculto:nth-child(5) {
+  display: none; }
+
+.index__reciclado:nth-child(6) {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.index__recicladoimg:nth-child(7) {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center; }
+
+.index__emociones-oculto:nth-child(8) {
+  display: none; }
+
+.index__emocionesimg:nth-child(9) {
+  grid-column: 1/2;
+  display: flex; }
+
+.index__emociones:nth-child(10) {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column; }
+
+/* MEDIA QUERIES */
+/* Celular */
+@media (min-width: 320px) and (max-width: 540px) {
+  /* Index */
+  .index__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .index__main .index__inicio {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 20px; }
+      .index__main .index__inicio .inicio__texto {
+        width: 100%; }
+        .index__main .index__inicio .inicio__texto h1 {
+          display: none; }
+        .index__main .index__inicio .inicio__texto p {
+          display: flex; }
+        .index__main .index__inicio .inicio__texto .botones__index {
+          display: flex;
+          justify-content: center; }
+      .index__main .index__inicio .titulo-oculto {
+        display: flex;
+        font-family: "Raleway", sans-serif;
+        font-size: 1rem;
+        color: #525252; }
+      .index__main .index__inicio img {
+        width: 80%; }
+    .index__main .index__catalogo .catalogo__titulo h2 {
+      font-size: 2rem; }
+    .index__main .index__catalogo .catalogo__categorias {
+      width: 100%; }
+      .index__main .index__catalogo .catalogo__categorias .card__catalogo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+        width: 20%; }
+        .index__main .index__catalogo .catalogo__categorias .card__catalogo .logo__catalogo {
+          width: 50%; }
+        .index__main .index__catalogo .catalogo__categorias .card__catalogo p {
+          font-size: 0.7rem; }
+        .index__main .index__catalogo .catalogo__categorias .card__catalogo h5 {
+          font-size: 0.7rem; }
+    .index__main .index__juguetes .juguetes__categorias {
+      display: flex;
+      flex-direction: column; }
+      .index__main .index__juguetes .juguetes__categorias a {
+        width: 100%; }
+        .index__main .index__juguetes .juguetes__categorias a .card__juguetes {
+          width: 80%; }
+    .index__main .index__info {
+      display: flex; }
+      .index__main .index__info img {
+        width: 50%; }
+      .index__main .index__info .info__categorias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .index__main .index__info .info__categorias .card__info {
+          display: flex;
+          margin: 5px;
+          padding: 5px; }
+    .index__main .index__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .index__main .index__contenedor h2 {
+        font-size: 1.4rem; }
+      .index__main .index__contenedor .img__contenedor {
+        width: 60%; }
+      .index__main .index__contenedor .index__contenedortitulo {
+        display: flex;
+        justify-content: center; }
+      .index__main .index__contenedor .index__desarrollo-oculto {
+        display: flex;
+        justify-content: center; }
+      .index__main .index__contenedor .index__desarrolloimg {
+        display: flex;
+        justify-content: center; }
+        .index__main .index__contenedor .index__desarrolloimg img {
+          width: 100%; }
+      .index__main .index__contenedor .index__desarrollo {
+        display: flex;
+        align-items: center; }
+        .index__main .index__contenedor .index__desarrollo h2 {
+          display: none; }
+      .index__main .index__contenedor .index__reciclado {
+        display: flex;
+        justify-content: center; }
+        .index__main .index__contenedor .index__reciclado h2 {
+          display: none; }
+      .index__main .index__contenedor .index__recicladoimg {
+        display: none; }
+      .index__main .index__contenedor .index__reciclado-oculto {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .index__main .index__contenedor .index__reciclado-oculto img {
+          width: 100%; }
+      .index__main .index__contenedor .index__emociones-oculto {
+        display: flex;
+        justify-content: center; }
+      .index__main .index__contenedor .index__emocionesimg {
+        display: flex;
+        justify-content: center; }
+        .index__main .index__contenedor .index__emocionesimg img {
+          width: 100%; }
+      .index__main .index__contenedor .index__emociones {
+        display: flex;
+        align-items: center; }
+        .index__main .index__contenedor .index__emociones h2 {
+          display: none; }
+  .index__footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .index__footer .footer__menu {
+      display: flex; }
+      .index__footer .footer__menu .categorias {
+        display: flex;
+        flex-direction: column; }
+        .index__footer .footer__menu .categorias .footer__div {
+          display: flex;
+          margin: 0px; } }
+
+/* Tablet */

@@ -1,0 +1,434 @@
+.producto{
+    &__main{
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 8rem 0rem 8rem;
+    }
+    &__contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        .titulo-oculto{
+            display: none;
+            margin: 0px;
+            color: $color-contenido;
+            font-family: $fuente-titulo;
+            font-weight: 700;
+            font-size: larger;
+        }
+        .detalle-imagenes{
+            width: 100%;
+            margin: 30px;
+            .imagen-grande{
+                .foto-producto{
+                    width: 90%;
+                    border-radius: 20px;
+                    margin-left: 10px;
+                }
+            }
+            .imagenes{
+                display: flex;
+                flex-direction: row;
+                .fotochica{
+                    width: 20%;
+                    margin: 10px;
+                    border-radius: 20px;
+                    &:hover{
+                        transform: scale(2);
+                    }
+                }
+            }
+        }
+        .detalle-descripcion{
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            width: 70%;
+            h1{
+                color: $color-contenido;
+                font-family: $fuente-titulo;
+            }
+            p{
+                font-family: $fuente-contenido;
+                color: $color-titulos;
+                font-size: 16px;
+                font-weight: 300;
+            }
+            ul{
+                padding: 0px;
+                .caracteristica{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .tilde{
+                        display: flex;
+                        width: 16px;
+                        height: 16px;
+                    }
+                    li{
+                        display: flex;
+                        margin: 10px 0px 10px 5px;
+                        font-family: $fuente-contenido;  
+                        font-size: 1rem;
+                        color: $color-titulos;
+                        font-size: 16px;
+                        font-weight: 300;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .boton{
+                padding: 15px 25px 15px 25px;
+                margin: 10px;
+                border-radius: 25px;
+                background-image: linear-gradient(90deg, rgba(242,209,209,1) 0%, rgba(214,73,43,1) 30%);
+                color: white;
+                border: none;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    &__similares{
+        .titulo__similares{
+            display: flex;
+            justify-content: center;
+            font-family: $fuente-titulo;
+            font-size: 1.2rem;
+            margin: 30px 0px 20px 0px;
+            color: $color-titulos;
+        }
+        .juguetes__similares{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            .card__similares{
+                display: flex;
+                flex-direction: column;
+                box-shadow: 2px 2px 2px 1px rgba(152, 151, 151, 0.2);
+                padding: 5px;
+                margin: 15px;
+                border: 2px;
+                border-style: solid;
+                border-color: #C8C8C8;
+                border-radius: 18px;
+                font-family: $fuente-contenido;
+                font-size: 1rem;
+                width: 20%;
+                .card__consultanos{
+                    display: flex;
+                    justify-content: center;
+                }
+                .imagen__juguete{
+                    width: 100%;
+                    border-radius: 18px;
+                }
+                h5{
+                    margin: 10px 5px 5px 5px;
+                    font-size: 1rem;
+                    color: #343434;
+                }
+                p{
+                    margin: 0px 0px 0px 5px;
+                    font-size: 0.8rem;
+                    color: #343434;
+                }
+            }
+        }
+        .boton__similares{
+            display: flex;
+            justify-content: center;
+            .boton{
+                padding: 15px 25px 15px 25px;
+                margin: 10px 10px 50px 10px;
+                border-width: 1px;
+                border-radius: 25px;
+                background-color: white;
+                border-color: $color-botones;
+                color: $color-botones;
+                &:hover{
+                    transform: scale(1.1);
+                    color: white;
+                    background-color: $color-botones;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 721px) and (max-width: 991px){
+    .producto{
+       &__contenedor{
+        display: flex;
+        flex-direction: column;
+        .titulo-oculto{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-size: 25px;
+            margin: 30px 0px 0px 0px;
+        }
+        .detalle-imagenes{
+            .imagen-grande{
+                .foto-producto{
+                    margin: 0px;
+                }
+            }
+            .imagenes{
+                display: none;
+            }
+        }
+        .detalle-descripcion{
+            display: flex;
+            width: 100%;
+            h1{
+                display: none;
+            }
+            
+        }
+        .boton-producto{
+            display: flex;
+            justify-content: center;
+        }
+       }
+        &__similares{
+            .titulo__similares{
+                margin: 0px;
+            }
+            .juguetes__similares{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .card__similares{
+                    width: 50%;
+                }
+            }
+            .boton__similares{
+                .boton{
+                    margin: 0px;
+                    padding: 20px 35px 20px 35px;
+                    border-radius: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+        &__footer{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .footer__menu{
+                display: flex;
+                .categorias{
+                    display: flex;
+                    flex-direction: column;
+                    .footer__div{
+                        display: none;
+                    }
+                }
+            }
+            .footer__redes{
+                display: flex;
+                margin: 0px;
+                width: 100%;
+                align-items: center;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    margin: 10px 0px 10px 0px;
+                    .footer__logo{
+                        width: 30%;
+                        &:hover{
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 540px) and (max-width: 720px){
+    .producto{
+        &__contenedor{
+            display: flex;
+            flex-direction: column;
+            margin: 30px 0px 0px 0px;
+            .titulo-oculto{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                font-size: 25px;
+            }
+            .detalle-imagenes{
+                .imagen-grande{
+                    .foto-producto{
+                        margin: 0px;
+                    }
+                }
+                .imagenes{
+                    display: none;
+                }
+            }
+            .detalle-descripcion{
+                display: flex;
+                width: 100%;
+                h1{
+                    display: none;
+                }
+            }
+            .boton-producto{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 0px;
+            }
+           }
+        &__similares{
+            .juguetes__similares{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .card__similares{
+                    width: 60%;
+                }
+            }
+        }
+        &__footer{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .footer__menu{
+                display: flex;
+                .categorias{
+                    display: flex;
+                    flex-direction: column;
+                    .footer__div{
+                        display: none;
+                    }
+                }
+            }
+            .footer__redes{
+                display: flex;
+                margin: 0px;
+                width: 100%;
+                align-items: center;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    margin: 10px 0px 10px 0px;
+                    .footer__logo{
+                        width: 30%;
+                        &:hover{
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 539px){
+    .producto{
+        &__main{
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+        &__contenedor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+            .titulo-oculto{
+                display: flex;
+                justify-content: center;
+            }
+            .detalle-imagenes{
+                display: flex;
+                flex-direction: column;
+                .imagen-grande{
+                    display: flex;
+                    justify-content: center;
+                    .foto-producto{
+                        width: 100%;
+                        display: flex;
+                        border-radius: 20px;
+                        margin: 0px;
+                    }
+                }
+                .imagenes{
+                    display: none;
+                }
+            }
+            .detalle-descripcion{
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                margin: 0px;
+                .boton-producto{
+                    display: flex;
+                    justify-content: center;
+                    &:hover{
+                        transform: scale(1);
+                    }
+                }
+                h1{
+                    display: none;
+                }
+            }
+        }
+        &__similares{
+            display: flex;
+            flex-direction: column;
+            .titulo__similares{
+                margin: 25px 0px 0px 0px;
+            }
+            .juguetes__similares{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                .card__similares{
+                    display: flex;
+                    width: 60%;
+                }
+            }
+        }
+        &__footer{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .footer__menu{
+                display: flex;
+                .categorias{
+                    display: flex;
+                    flex-direction: column;
+                    .footer__div{
+                        display: none;
+                    }
+                }
+            }
+            .footer__redes{
+                display: flex;
+                margin: 0px;
+                width: 100%;
+                align-items: center;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    margin: 10px 0px 10px 0px;
+                    .footer__logo{
+                        width: 50%;
+                        &:hover{
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
