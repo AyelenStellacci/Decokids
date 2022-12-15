@@ -105,36 +105,43 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            .card__similares{
-                display: flex;
-                flex-direction: column;
-                box-shadow: 2px 2px 2px 1px rgba(152, 151, 151, 0.2);
-                padding: 5px;
-                margin: 15px;
-                border: 2px;
-                border-style: solid;
-                border-color: #C8C8C8;
-                border-radius: 18px;
-                font-family: $fuente-contenido;
-                font-size: 1rem;
-                width: 20%;
-                .card__consultanos{
+            a{
+                width: 25%;
+                text-decoration: none;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                .card__similares{
                     display: flex;
-                    justify-content: center;
-                }
-                .imagen__juguete{
-                    width: 100%;
+                    flex-direction: column;
+                    box-shadow: 2px 2px 2px 1px rgba(152, 151, 151, 0.2);
+                    padding: 5px;
+                    margin: 15px;
+                    border: 2px;
+                    border-style: solid;
+                    border-color: #C8C8C8;
                     border-radius: 18px;
-                }
-                h5{
-                    margin: 10px 5px 5px 5px;
+                    font-family: $fuente-contenido;
                     font-size: 1rem;
-                    color: #343434;
-                }
-                p{
-                    margin: 0px 0px 0px 5px;
-                    font-size: 0.8rem;
-                    color: #343434;
+                    
+                    .card__consultanos{
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .imagen__juguete{
+                        width: 100%;
+                        border-radius: 18px;
+                    }
+                    h5{
+                        margin: 10px 5px 5px 5px;
+                        font-size: 1rem;
+                        color: #343434;
+                    }
+                    p{
+                        margin: 0px 0px 0px 5px;
+                        font-size: 0.8rem;
+                        color: #343434;
+                    }
                 }
             }
         }
