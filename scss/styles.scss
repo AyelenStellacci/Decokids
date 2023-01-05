@@ -1,10 +1,13 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
+@import 'menu';
+@import 'tienda';
 @import './paginas/producto';
-@import './paginas/nosotros.scss';
+@import './paginas/nosotros';
 @import './paginas/productos';
 @import './paginas/reciclemos';
+
 
 body{
     margin: 0px;
@@ -21,11 +24,11 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: 40px;
-        padding: 20px;
+        margin: 70px;
         .inicio__texto{
             display: flex;
             flex-direction: column;
+            padding: 10px;
             width: 60%;
             h1{
                 font-family: $fuente-titulo;
@@ -64,11 +67,12 @@ body{
         }
         .inicio__imagen{
             display: flex;
+            align-items: center;
             justify-content: center;
+            width: 40%;
             .img_principal{
-                width: 60%;
+                width: 80%;
                 border-radius: 18px;
-                margin: 40px;
             }
         }
         .titulo-oculto{
@@ -79,8 +83,6 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-image: url("../recursos/imagenes/index/fondo-catalogo.jpg");
-        background-repeat: no-repeat;
         width: 100%;
         height: 80%;
         border-radius: 20% 20% -20% -20%;
@@ -95,11 +97,11 @@ body{
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin: 70px 40px 70px 40px;
+            margin: 40px 20px 40px 20px;
             .card__catalogo{
                 display: flex;
                 flex-direction: column;
-                padding: 30px 70px 30px 70px;
+                padding: 40px 20px 40px 20px;
                 margin: 20px;
                 border-style: solid;
                 border-color: rgba(243, 206, 202, 0.4);
@@ -110,9 +112,19 @@ body{
                 font-size: 1rem;
                 align-items: center;
                 width: 20%;
+                h5{
+                    display: flex;
+                    text-align: center;
+                    font-size: 1.3rem;
+                }
+                p{
+                    display: flex;
+                    text-align: center;
+                    font-size: 1rem;
+                }
                 .logo__catalogo{
-                    width: 80px;
-                    height: 80px;
+                    width: 70px;
+                    height: 70px;
                     margin: 10px;
                 }
                     &:hover{
@@ -205,11 +217,12 @@ body{
         width: 90%;
         /*background-image: url(../recursos/imagenes/index/fondoinfo.png);*/
         img{
-            width: 20%;
+            width: 30%;
         }
         .info__categorias{
             display: flex;
             flex-direction: row;
+            margin: 0px 0px 20px 0px;
             .card__info{
                 display: flex;
                 flex-direction: column;
@@ -310,170 +323,367 @@ body{
 }
 
 /* MEDIA QUERIES */
-/* Celular */
-@media (min-width: 320px) and (max-width: 540px){
-    /* Index */
+@media (min-width: 991px) and (max-width: 1100px){
     .index{
-        &__main{
+        &__catalogo{
+            .catalogo__categorias{
+                .card__catalogo{
+                    width: 25%;
+                }
+            }
+        }
+        &__info{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-                .index__inicio{
-                    display: flex;
-                    flex-direction: column-reverse;
-                    align-items: center;
-                    margin: 20px;
-                    .inicio__texto{
-                        width: 100%;
-                        h1{
-                            display: none;
-                        }
-                        p{
-                            display: flex;
-                        }
-                        .botones__index{
-                            display: flex;
-                            justify-content: center;
-                        }
-                    }
-                    .titulo-oculto{
+            img{
+                width: 45%;
+            }
+        }
+        &__contenedor{
+            .index__contenedortitulo{
+                margin: 20px;
+            }
+            .index__desarrolloimg{
+                margin: 0px 0px 25px 0px;
+            }
+            .index__desarrollo{
+                margin: 0px 0px 25px 0px;
+            }
+            .index__reciclado{
+                margin: 0px 0px 25px 0px;
+            }
+            .index__recicladoimg{
+                margin: 0px 0px 25px 0px;
+            }
+            .index__emocionesimg{
+                margin: 0px 0px 25px 0px;
+            }
+            .index__emociones{
+                margin: 0px 0px 25px 0px;
+            }
+        }
+        &__footer{
+            display: flex;
+            .footer__redes{
+                display: flex;
+                padding: 10px;
+                margin: 0px;
+                width: 100%;
+                .footer__img{
+                    a{
                         display: flex;
-                        font-family: $fuente-titulo;
-                        font-size: 1rem;
-                        color: $color-titulos;
-                    }
-                    img{
-                        width: 80%;
-                    }
-                    
-                }
-                .index__catalogo{
-                    .catalogo__titulo{
-                        h2{
-                            font-size: 2rem;
-                        }
-                    }
-                    .catalogo__categorias{
-                        width: 100%;
-                        .card__catalogo{
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-start;
-                            margin: 5px;
-                            padding: 5px 10px 5px 10px;
-                            width: 20%;
-                            .logo__catalogo{
-                                width: 50%;
-                            }
-                            p{
-                                font-size: 0.7rem;
-                            }
-                            h5{
-                                font-size: 0.7rem;
-                            }
-                        }
-                    }
-                }
-                .index__juguetes{
-                    .juguetes__categorias{
-                        display: flex;
-                        flex-direction: column;
-                        a{
-                            width: 100%;
-                            .card__juguetes{
-                                width: 80%;
-                            }
-
-                        }
-                    }
-                }
-                .index__info{
-                    display: flex;
-                    img{
-                        width: 50%;
-                    }
-                    .info__categorias{
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        .card__info{
-                            display: flex;
-                            margin: 5px;
-                            padding: 5px;
-                        }
-                    }
-                }
-                .index__contenedor{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    h2{
-                        font-size: 1.4rem;
-                    }
-                        .img__contenedor{
+                        img{
                             width: 60%;
                         }
-                        .index__contenedortitulo{
-                            display: flex;
-                            justify-content: center;
-                        }
-                        .index__desarrollo-oculto{
-                            display: flex;
-                            justify-content: center;
-                        }
-                        .index__desarrolloimg{
-                            display: flex;
-                            justify-content: center;
-                            img{
-                                width: 100%;
-                            }
-                        }
-                        .index__desarrollo{
-                            display: flex;
-                            align-items: center;
-                            h2{
-                                display: none;
-                            }
-                        }
-                        .index__reciclado{
-                            display: flex;
-                            justify-content: center;
-                            h2{
-                                display: none;
-                            }
-                        }
-                        .index__recicladoimg{
-                            display: none;
-                        }
-                        .index__reciclado-oculto{
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            img{
-                                width: 100%;
-                            }
-                        }
-                        .index__emociones-oculto{
-                            display: flex;
-                            justify-content: center;
-                        }
-                        .index__emocionesimg{
-                            display: flex;
-                            justify-content: center;
-                            img{
-                                width: 100%;
-                            }
-                        }
-                        .index__emociones{
-                            display: flex;
-                            align-items: center;
-                            h2{
-                                display: none;
-                            }
-                        }
-
                     }
+                }
+                
+            }
         }
+    }
+}
+
+@media (min-width: 721px) and (max-width: 990px){
+    .index{
+        &__inicio{
+            display: flex;
+            margin: 30px;
+            .inicio__texto{
+                h1{
+                    font-size: 2rem;
+                }
+                margin: 20px;
+            }
+            .inicio__imagen{
+                display: flex;
+                width: 50%;
+            }
+        }
+        &__catalogo{
+            .catalogo__categorias{
+                .card__catalogo{
+                    width: 25%;
+                    padding: 25px 5px 25px 5px;
+                    margin: 15px;
+                    .logo__catalogo{
+                        width: 60px;
+                        height: 60px;
+                    }
+                    h5{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        &__juguetes{
+            margin: 0px;
+            .juguetes__categorias{
+                display: flex;
+                margin: 0px;
+                a{
+                    display: flex;
+                    text-align: center;
+                    width: 30%;
+                }
+            }
+        }
+        &__info{
+            .info__categorias{
+                margin: 0px 0px 20px 0px;
+                .card__info{
+                    margin: 30px;
+                    padding: 0px;
+                    justify-content: flex-start;
+                    img{
+                        width: 40%;
+                    }
+                    h5{
+                        font-size: 1rem;
+                    }
+                    p{
+                        display: flex;
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        &__contenedor{
+            .index__contenedortitulo{
+                margin: 20px;
+            }
+            .index__desarrolloimg{
+                margin: 0px 0px 25px 0px;
+                img{
+                    width: 80%;
+                }
+            }
+            .index__desarrollo{
+                margin: 0px 0px 25px 0px;
+            }
+            .index__reciclado{
+                margin: 0px 0px 25px 0px;
+            }
+            .index__recicladoimg{
+                margin: 0px 0px 25px 0px;
+                img{
+                    width: 80%;
+                }
+            }
+            .index__emocionesimg{
+                margin: 0px 0px 25px 0px;
+                img{
+                    width: 80%;
+                }
+            }
+            .index__emociones{
+                margin: 0px 0px 25px 0px;
+            }
+        }
+        &__footer{
+            display: flex;
+            flex-direction: column-reverse;
+            .footer__redes{
+                display: flex;
+                padding: 10px;
+                margin: 0px;
+                width: 100%;
+                .footer__img{
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            width: 30%;
+                        }
+                    }
+                }
+                .footer__iconos{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .footer__menu{
+                display: flex;
+                .categorias{
+                    display: flex;
+                    justify-content: center;
+                }
+                .footer__derechos{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 541px) and (max-width: 720px){
+    .index{
+        &__inicio{
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 30px;
+            .titulo{
+                display: none;
+            }
+            .inicio__texto{
+                display: flex;
+                align-items: center;
+                margin: 25px;
+                width: 100%;
+            }
+            .inicio__imagen{
+                margin: 15px;
+                width: 100%;
+                .img_principal{
+                    display: flex;
+                    justify-content: center;
+                    width: 60%;
+                }
+            }
+            .titulo-oculto{
+                display: flex;
+                font-family: $fuente-titulo;
+                font-size: 2rem;
+                color: $color-titulos;
+                margin: 30px;
+                text-align: center;
+            }
+        }
+        &__catalogo{
+            .catalogo__categorias{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+                .card__catalogo{
+                    display: flex;
+                    width: 60%;
+                    padding: 15px;
+                    margin: 10px;
+                }
+            }
+        }
+        &__juguetes{
+            margin: 0px;
+            .juguetes__categorias{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    width: 80%;
+                    .card__juguetes{
+                        width: 80%;
+                        h5{
+                            font-size: 1.2rem;
+                        }
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        &__info{
+            display: flex;
+            img{
+                width: 35%;
+            }
+            .info__categorias{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .card__info{
+                    display: flex;
+                    margin: 15px;
+                    padding: 15px;
+                    p{
+                        display: flex;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        &__contenedor{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            h2{
+                font-size: 1.6rem;
+                font-family: $fuente-titulo;
+                color: $color-titulos;
+            }
+            .index__contenedortitulo{
+                display: flex;
+                justify-content: center;
+                h1{
+                    font-size: 2rem;
+                }
+            }
+            .index__desarrollo-oculto{
+                display: flex;
+                justify-content: center;
+                margin: 20px 0px 10px 0px;
+            }
+            .index__desarrolloimg{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 50%;
+                }
+            }
+            .index__desarrollo{
+                display: flex;
+                align-items: center;
+                h2{
+                    display: none;
+                }
+            }
+            .index__reciclado-oculto{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    margin: 20px 0px 10px 0px;
+                }
+                img{
+                    width: 50%;
+                }
+            }
+            .index__recicladoimg{
+                display: none;
+            }
+            .index__reciclado{
+                display: flex;
+                align-items: center;
+                h2{
+                    display: none;
+                }
+            }
+            .index__emociones-oculto{
+                display: flex;
+                align-items: center;
+                margin: 20px 0px 10px 0px;
+            }
+            .index__emocionesimg{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 50%;
+                }
+            }
+            .index__emociones{
+                display: flex;
+                align-items: center;
+                h2{
+                    display: none;
+                }
+            }
+
+            }
         &__footer{
             display: flex;
             flex-direction: column;
@@ -484,8 +694,229 @@ body{
                     display: flex;
                     flex-direction: column;
                     .footer__div{
+                        display: none;
+                    }
+                }
+            }
+            .footer__redes{
+                display: flex;
+                margin: 0px;
+                width: 100%;
+                align-items: center;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    margin: 10px 0px 10px 0px;
+                    .footer__logo{
+                        width: 50%;
+                        &:hover{
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        } 
+        
+    }
+}
+/* Celular */
+@media (min-width: 320px) and (max-width: 540px){
+    /* Index */
+    .index{
+        &__main{
+            display: flex;
+            justify-content: center;
+        }
+        &__inicio{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin: 15px;
+            .inicio__texto{
+                width: 100%;
+                h1{
+                    display: none;
+                }
+                p{
+                    display: flex;
+                }
+                .botones__index{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .inicio__imagen{
+                width: 100%;
+                margin: 15px;
+                .img_principal{
+                    display: flex;
+                    width: 50%;
+                }
+            }
+            .titulo-oculto{
+                display: flex;
+                font-family: $fuente-titulo;
+                font-size: 1rem;
+                color: $color-titulos;
+                margin: 15px;
+                text-align: center;
+            }
+        }
+        &__catalogo{
+            .catalogo__titulo{
+                margin: 20px 0px 0px 0px;
+            }
+            .catalogo__categorias{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 40px;
+                .card__catalogo{
+                    display: flex;
+                    width: 60%;
+                    padding: 15px;
+                    margin: 10px;
+                }
+            }
+        }
+        &__juguetes{
+            margin: 0px;
+            .titulo__juguetes{
+                margin: 0px;
+            }
+            .juguetes__categorias{
+                display: flex;
+                flex-direction: column;
+                margin: 20px;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    .card__juguetes{
+                        width: 60%;
+                    }
+
+                }
+            }
+        }
+        &__info{
+            display: flex;
+            img{
+                width: 40%;
+            }
+            .info__categorias{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .card__info{
+                    display: flex;
+                    margin: 15px;
+                    padding: 15px;
+                    p{
                         display: flex;
-                        margin: 0px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        &__contenedor{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+            h2{
+                font-size: 1.8rem;
+                font-family: $fuente-titulo;
+                color: $color-titulos;
+            }
+            .index__contenedortitulo{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                h1{
+                    font-size: 2rem;
+                }
+            }
+            .index__desarrollo-oculto{
+                display: flex;
+                justify-content: center;
+                margin: 20px 0px 10px 0px;
+            }
+            .index__desarrolloimg{
+                display: flex;
+                justify-content: center;
+            }
+            .index__desarrollo{
+                display: flex;
+                align-items: center;
+                h2{
+                    display: none;
+                }
+            }
+            .index__reciclado-oculto{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    margin: 20px 0px 10px 0px;
+                }
+            }
+            .index__recicladoimg{
+                display: none;
+            }
+            .index__reciclado{
+                display: flex;
+                align-items: center;
+                h2{
+                    display: none;
+                }
+            }
+            .index__emociones-oculto{
+                display: flex;
+                align-items: center;
+                margin: 20px 0px 10px 0px;
+            }
+            .index__emocionesimg{
+                display: flex;
+                justify-content: center;
+            }
+            .index__emociones{
+                display: flex;
+                align-items: center;
+                h2{
+                    display: none;
+                }
+            }
+
+        }  
+        &__footer{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .footer__menu{
+                display: flex;
+                .categorias{
+                    display: flex;
+                    flex-direction: column;
+                    .footer__div{
+                        display: none;
+                    }
+                }
+            }
+            .footer__redes{
+                display: flex;
+                margin: 0px;
+                width: 100%;
+                align-items: center;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    margin: 10px 0px 10px 0px;
+                    .footer__logo{
+                        width: 50%;
+                        &:hover{
+                            transform: scale(1);
+                        }
                     }
                 }
             }

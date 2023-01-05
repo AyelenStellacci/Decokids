@@ -22,6 +22,7 @@ header{
                         display: flex;
                         font-weight: 700;
                         color: $color-contenido;
+                        font-family: $fuente-contenido2;
                         text-decoration: none;
                         &:hover{
                             transform: scale(1.1);

@@ -1,0 +1,194 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.reciclemos{
+    &__main{
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-family: $fuente-titulo;
+            font-size: 2.2rem;
+            color: $color-titulos;
+        }
+        h2{
+            font-family: $fuente-titulo;
+            font-size: 1.7rem;
+            color: $color-titulos;
+        }
+        p{
+            font-family: $fuente-contenido;  
+            font-size: 1rem;
+            color: $color-titulos;
+            font-size: 16px;
+            font-weight: 300;
+            text-align: justify;
+        }
+    }
+    &__titulo{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px 0px 0px;
+    }
+    &__texto1{
+        display: flex;
+        flex-direction: row;
+        padding: 22px;
+        justify-content: center;
+        .imagen{
+            display: flex;
+            width: 30%;
+            align-items: center;
+            img{
+                width: 80%;
+            }
+        }
+        .texto{
+            display: flex;
+            flex-direction: column;
+            background-color: #FFF1EE;
+            border-radius: 15px;
+            width: 30%;
+            text-align: justify;
+            padding: 20px 20px 0px 20px;
+            h2{
+                margin: 0px;
+            }
+        }
+    }
+    &__texto2{
+        display: flex;
+        flex-direction: row;
+        padding: 22px;
+        justify-content: center;
+        .imagen{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            align-items: center;
+            img{
+                width: 80%;
+                margin: 10px;
+            }
+        }
+        .texto{
+            display: flex;
+            flex-direction: column;
+            background-color: #FFF1EE;
+            border-radius: 15px;
+            width: 30%;
+            text-align: justify;
+            padding: 20px 20px 0px 20px;
+            h2{
+                margin: 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: 721px) and (max-width: 991px){
+    .reciclemos{
+        &__texto1{
+            display: flex;
+            .imagen{
+                width: 50%;
+            }
+            .texto{
+                width: 50%;
+            }
+        } 
+        &__texto2{
+            display: flex;
+            .imagen{
+                width: 50%;
+            }
+            .texto{
+                width: 50%;
+            }
+        } 
+    }
+    
+}
+@media (min-width: 540px) and (max-width: 720px){
+    .reciclemos{
+        &__texto1{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            .imagen{
+                display: flex;
+                width: 100%;
+                margin: 10px;
+                justify-content: center;
+                img{
+                    width: 50%;
+                }
+            }
+            .texto{
+                width: 90%;
+            }
+        } 
+        &__texto2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .imagen{
+                display: flex;
+                width: 100%;
+                margin: 10px;
+                justify-content: center;
+                .foto2{
+                    display: none;
+                }
+                img{
+                    width: 50%;
+                }
+            }
+            .texto{
+                width: 90%;
+            }
+        } 
+    }
+}
+
+@media (min-width: 320px) and (max-width: 539px){
+    .reciclemos{
+        &__texto1{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            .imagen{
+                display: flex;
+                width: 100%;
+                margin: 10px;
+                justify-content: center;
+                img{
+                    width: 60%;
+                }
+            }
+            .texto{
+                width: 90%;
+            }
+        } 
+        &__texto2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .imagen{
+                display: flex;
+                width: 100%;
+                margin: 10px;
+                justify-content: center;
+                .foto2{
+                    display: none;
+                }
+                img{
+                    width: 70%;
+                }
+            }
+            .texto{
+                width: 90%;
+            }
+        } 
+    }
+}
