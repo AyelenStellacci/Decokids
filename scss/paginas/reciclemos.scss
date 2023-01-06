@@ -111,6 +111,16 @@ body{
 }
 @media (min-width: 540px) and (max-width: 720px){
     .reciclemos{
+        &__header{
+            .header__logo{
+                .contenedor__logo{
+                    .logo{
+                        display: flex;
+                        width: 30%;
+                    }
+                }
+            }
+        }
         &__texto1{
             display: flex;
             flex-direction: column-reverse;
@@ -147,12 +157,27 @@ body{
             .texto{
                 width: 90%;
             }
-        } 
+        }
     }
 }
-
-@media (min-width: 320px) and (max-width: 539px){
+@media (min-width: 320px) and (max-width: 540px){
     .reciclemos{
+        &__header{
+            .header__menu{
+                nav{
+                    ul{
+                        display: none;
+                    }
+                }
+            }
+            .header__logo{
+                .contenedor__logo{
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+                }
+            }
+        }
         &__texto1{
             display: flex;
             flex-direction: column-reverse;
@@ -189,6 +214,6 @@ body{
             .texto{
                 width: 90%;
             }
-        } 
+        }
     }
 }

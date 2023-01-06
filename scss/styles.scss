@@ -79,60 +79,6 @@ body{
             display: none;
         }
     }
-    &__catalogo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 80%;
-        border-radius: 20% 20% -20% -20%;
-        .catalogo__titulo{
-            display: flex;
-            justify-content: center;
-            font-family: $fuente-titulo;
-            font-size: 1.8rem;
-            color: $color-titulos;
-        }
-        .catalogo__categorias{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin: 40px 20px 40px 20px;
-            .card__catalogo{
-                display: flex;
-                flex-direction: column;
-                padding: 40px 20px 40px 20px;
-                margin: 20px;
-                border-style: solid;
-                border-color: rgba(243, 206, 202, 0.4);
-                border-width: 2px;
-                box-shadow: 2px 2px 2px 1px rgba(243, 206, 202, 0.4);
-                border-radius: 18px;
-                font-family: $fuente-contenido;
-                font-size: 1rem;
-                align-items: center;
-                width: 20%;
-                h5{
-                    display: flex;
-                    text-align: center;
-                    font-size: 1.3rem;
-                }
-                p{
-                    display: flex;
-                    text-align: center;
-                    font-size: 1rem;
-                }
-                .logo__catalogo{
-                    width: 70px;
-                    height: 70px;
-                    margin: 10px;
-                }
-                    &:hover{
-                        transform: scale(1.1);
-                    }
-            }
-        }
-    }
     &__juguetes{
         margin: 50px;
         .titulo__juguetes{
@@ -325,13 +271,6 @@ body{
 /* MEDIA QUERIES */
 @media (min-width: 991px) and (max-width: 1100px){
     .index{
-        &__catalogo{
-            .catalogo__categorias{
-                .card__catalogo{
-                    width: 25%;
-                }
-            }
-        }
         &__info{
             display: flex;
             img{
@@ -396,25 +335,6 @@ body{
             .inicio__imagen{
                 display: flex;
                 width: 50%;
-            }
-        }
-        &__catalogo{
-            .catalogo__categorias{
-                .card__catalogo{
-                    width: 25%;
-                    padding: 25px 5px 25px 5px;
-                    margin: 15px;
-                    .logo__catalogo{
-                        width: 60px;
-                        height: 60px;
-                    }
-                    h5{
-                        font-size: 1rem;
-                    }
-                    p{
-                        font-size: 1rem;
-                    }
-                }
             }
         }
         &__juguetes{
@@ -520,6 +440,16 @@ body{
 
 @media (min-width: 541px) and (max-width: 720px){
     .index{
+        &__header{
+            .header__logo{
+                .contenedor__logo{
+                    .logo{
+                        display: flex;
+                        width: 30%;
+                    }
+                }
+            }
+        }
         &__inicio{
             display: flex;
             flex-direction: column-reverse;
@@ -549,20 +479,6 @@ body{
                 color: $color-titulos;
                 margin: 30px;
                 text-align: center;
-            }
-        }
-        &__catalogo{
-            .catalogo__categorias{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: 0px;
-                .card__catalogo{
-                    display: flex;
-                    width: 60%;
-                    padding: 15px;
-                    margin: 10px;
-                }
             }
         }
         &__juguetes{
@@ -715,14 +631,27 @@ body{
                     }
                 }
             }
-        } 
-        
+        }
     }
 }
-/* Celular */
 @media (min-width: 320px) and (max-width: 540px){
-    /* Index */
     .index{
+        &__header{
+            .header__menu{
+                nav{
+                    ul{
+                        display: none;
+                    }
+                }
+            }
+            .header__logo{
+                .contenedor__logo{
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+                }
+            }
+        }
         &__main{
             display: flex;
             justify-content: center;
@@ -760,23 +689,6 @@ body{
                 color: $color-titulos;
                 margin: 15px;
                 text-align: center;
-            }
-        }
-        &__catalogo{
-            .catalogo__titulo{
-                margin: 20px 0px 0px 0px;
-            }
-            .catalogo__categorias{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: 40px;
-                .card__catalogo{
-                    display: flex;
-                    width: 60%;
-                    padding: 15px;
-                    margin: 10px;
-                }
             }
         }
         &__juguetes{
@@ -923,4 +835,3 @@ body{
         }
     }
 }
-/* Tablet */
