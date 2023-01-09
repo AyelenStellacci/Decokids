@@ -78,13 +78,10 @@ footer {
             margin: 10px; }
             footer .footer__menu .categorias .footer__div ul li a {
               display: flex;
-              font-weight: 500;
               color: #BC422B;
               text-decoration: none; }
               footer .footer__menu .categorias .footer__div ul li a:hover {
                 transform: scale(1.1); }
-        footer .footer__menu .categorias .footer__div p:hover {
-          transform: scale(1.1); }
     footer .footer__menu .footer__derechos {
       display: flex;
       justify-content: center;
