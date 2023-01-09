@@ -273,18 +273,6 @@ footer {
   .categoryNav {
     padding: 10%; } }
 
-@media (min-width: 320px) and (max-width: 540px) {
-  .header .header__menu nav ul {
-    display: none; }
-  .header .header__logo .contenedor__logo {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%; }
-    .header .header__logo .contenedor__logo .logo {
-      display: flex;
-      justify-content: flex-end;
-      width: 25%; } }
-
 .categoryNav button {
   align-self: center;
   cursor: pointer;
@@ -309,6 +297,25 @@ footer {
   background-color: #d6492b !important;
   color: #fff !important; }
 
+/*
+@media (min-width: 320px) and (max-width: 539px){
+    &__header{
+        .header__menu{
+            nav{
+                ul{
+                    display: none;
+                }
+            }
+        }
+        .header__logo{
+            .contenedor__logo{
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+            }
+        }
+    }
+}*/
 .producto__main {
   display: flex;
   flex-direction: column;
