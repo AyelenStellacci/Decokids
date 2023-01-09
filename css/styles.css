@@ -292,6 +292,9 @@ footer {
   color: #d6492b;
   text-decoration: none; }
 
+.categoryNav p:hover {
+  transform: scale(1.1); }
+
 .catdestacado {
   background-color: #d6492b !important;
   color: #fff !important; }
