@@ -1269,8 +1269,6 @@ body {
       margin: 20px;
       width: 40%;
       font-family: "Poppins", sans-serif; }
-      .index__info .info__categorias .card__info:hover {
-        transform: scale(1.1); }
       .index__info .info__categorias .card__info h5 {
         color: black;
         font-size: 1.2rem;
