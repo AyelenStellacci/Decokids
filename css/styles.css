@@ -787,7 +787,8 @@ body {
     padding: 0px; }
     .nosotros__texto1 .texto {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      padding: 0px; }
       .nosotros__texto1 .texto p {
         width: 90%; }
     .nosotros__texto1 .imagen {
@@ -846,7 +847,8 @@ body {
     flex-direction: column-reverse; }
     .nosotros__texto1 .texto {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      padding: 0px; }
       .nosotros__texto1 .texto p {
         width: 90%; }
     .nosotros__texto1 .imagen {
@@ -915,7 +917,8 @@ body {
     flex-direction: column-reverse; }
     .nosotros__texto1 .texto {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      padding: 0px; }
       .nosotros__texto1 .texto p {
         width: 100%; }
     .nosotros__texto1 .imagen {
