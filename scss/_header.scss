@@ -37,11 +37,11 @@ header{
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        padding: 10px;
         .contenedor__logo{
             display: flex;
             width: 20%;
             .logo{
-                padding: 10px;
                 width: 90%;
                 &:hover{
                     transform: scale(1.1);

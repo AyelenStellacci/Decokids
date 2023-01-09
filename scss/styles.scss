@@ -443,9 +443,10 @@ body{
         &__header{
             .header__logo{
                 .contenedor__logo{
+                    width: 30%;
                     .logo{
                         display: flex;
-                        width: 30%;
+                        width: 100%;
                     }
                 }
             }
@@ -648,7 +649,7 @@ body{
                 .contenedor__logo{
                     display: flex;
                     justify-content: flex-end;
-                    width: 100%;
+                    width: 30%;
                 }
             }
         }

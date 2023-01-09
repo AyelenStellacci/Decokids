@@ -29,12 +29,12 @@ header {
   header .header__logo {
     display: flex;
     align-items: center;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    padding: 10px; }
     header .header__logo .contenedor__logo {
       display: flex;
       width: 20%; }
       header .header__logo .contenedor__logo .logo {
-        padding: 10px;
         width: 90%; }
         header .header__logo .contenedor__logo .logo:hover {
           transform: scale(1.1); }
@@ -513,9 +513,11 @@ footer {
             transform: scale(1); } }
 
 @media (min-width: 540px) and (max-width: 720px) {
-  .producto__header .header__logo .contenedor__logo .logo {
-    display: flex;
+  .producto__header .header__logo .contenedor__logo {
     width: 30%; }
+    .producto__header .header__logo .contenedor__logo .logo {
+      display: flex;
+      width: 100%; }
   .producto__contenedor {
     display: flex;
     flex-direction: column;
@@ -576,7 +578,7 @@ footer {
   .producto__header .header__logo .contenedor__logo {
     display: flex;
     justify-content: flex-end;
-    width: 100%; }
+    width: 30%; }
   .producto__main {
     display: flex;
     flex-direction: column;
@@ -824,9 +826,11 @@ body {
     width: 50%; } }
 
 @media (min-width: 540px) and (max-width: 720px) {
-  .nosotros__header .header__logo .contenedor__logo .logo {
-    display: flex;
+  .nosotros__header .header__logo .contenedor__logo {
     width: 30%; }
+    .nosotros__header .header__logo .contenedor__logo .logo {
+      display: flex;
+      width: 100%; }
   .nosotros__main h2 {
     font-size: 2rem;
     margin: 0px; }
@@ -897,7 +901,7 @@ body {
   .nosotros__header .header__logo .contenedor__logo {
     display: flex;
     justify-content: flex-end;
-    width: 100%; }
+    width: 30%; }
   .nosotros__main h2 {
     font-size: 1.5rem;
     margin: 0px; }
@@ -1048,9 +1052,11 @@ body {
       width: 50%; } }
 
 @media (min-width: 540px) and (max-width: 720px) {
-  .reciclemos__header .header__logo .contenedor__logo .logo {
-    display: flex;
+  .reciclemos__header .header__logo .contenedor__logo {
     width: 30%; }
+    .reciclemos__header .header__logo .contenedor__logo .logo {
+      display: flex;
+      width: 100%; }
   .reciclemos__texto1 {
     display: flex;
     flex-direction: column-reverse;
@@ -1086,7 +1092,7 @@ body {
   .reciclemos__header .header__logo .contenedor__logo {
     display: flex;
     justify-content: flex-end;
-    width: 100%; }
+    width: 30%; }
   .reciclemos__texto1 {
     display: flex;
     flex-direction: column-reverse;
@@ -1449,9 +1455,11 @@ body {
         display: none; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
-  .index__header .header__logo .contenedor__logo .logo {
-    display: flex;
+  .index__header .header__logo .contenedor__logo {
     width: 30%; }
+    .index__header .header__logo .contenedor__logo .logo {
+      display: flex;
+      width: 100%; }
   .index__inicio {
     display: flex;
     flex-direction: column-reverse;
@@ -1595,7 +1603,7 @@ body {
   .index__header .header__logo .contenedor__logo {
     display: flex;
     justify-content: flex-end;
-    width: 100%; }
+    width: 30%; }
   .index__main {
     display: flex;
     justify-content: center; }
