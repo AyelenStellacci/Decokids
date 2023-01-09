@@ -250,7 +250,7 @@ footer {
 
 .searchNav .buscador {
   background-color: #fff;
-  border: 2px solid #d6492b;
+  border: 1px solid #d6492b;
   color: #d6492b;
   justify-self: center;
   align-self: center;
@@ -273,11 +273,23 @@ footer {
   .categoryNav {
     padding: 10%; } }
 
+@media (min-width: 320px) and (max-width: 540px) {
+  .header .header__menu nav ul {
+    display: none; }
+  .header .header__logo .contenedor__logo {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+    .header .header__logo .contenedor__logo .logo {
+      display: flex;
+      justify-content: flex-end;
+      width: 25%; } }
+
 .categoryNav button {
   align-self: center;
   cursor: pointer;
   background-color: #fff;
-  border: 2px solid #d6492b;
+  border: 1px solid #d6492b;
   border-radius: 20px;
   color: #d6492b;
   transition: .1s;
@@ -291,7 +303,7 @@ footer {
 .categoryNav p {
   cursor: pointer;
   color: #d6492b;
-  text-decoration: underline #d6492b; }
+  text-decoration: none; }
 
 .catdestacado {
   background-color: #d6492b !important;
