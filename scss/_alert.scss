@@ -5,6 +5,6 @@
     border-radius: 20px!important;
     background-color: $color-botones!important;
     &:focus{
-        box-shadow:rgb(224 147 102 / 50%) 0 0 3px rgb(224 147 102 / 50%)!important;
+        box-shadow: none!important;
     }
 }

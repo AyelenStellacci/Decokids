@@ -311,6 +311,15 @@ footer {
     display: flex;
     width: 30%; } }
 
+.swal2image {
+  border-radius: 20px !important; }
+
+.swal2confirm {
+  border-radius: 20px !important;
+  background-color: #D6492B !important; }
+  .swal2confirm:focus {
+    box-shadow: none !important; }
+
 .producto__main {
   display: flex;
   flex-direction: column;
