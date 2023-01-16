@@ -306,6 +306,11 @@ footer {
     justify-content: flex-end;
     width: 30%; } }
 
+@media (min-width: 540px) and (max-width: 729px) {
+  .tienda__header .header__logo .contenedor__logo {
+    display: flex;
+    width: 30%; } }
+
 .producto__main {
   display: flex;
   flex-direction: column;
