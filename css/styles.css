@@ -311,13 +311,16 @@ footer {
     display: flex;
     width: 30%; } }
 
-.swal2image {
+.swal2-container.swal2-center > .swal2-popup {
   border-radius: 20px !important; }
 
-.swal2confirm {
-  border-radius: 20px !important;
+.swal2-container .swal2-image {
+  border-radius: 20px !important; }
+
+.swal2-container .swal2-styled.swal2-confirm {
+  border-radius: 15px !important;
   background-color: #D6492B !important; }
-  .swal2confirm:focus {
+  .swal2-container .swal2-styled.swal2-confirm:focus {
     box-shadow: none !important; }
 
 .producto__main {
