@@ -296,25 +296,16 @@ footer {
   background-color: #d6492b !important;
   color: #fff !important; }
 
-/*
-@media (min-width: 320px) and (max-width: 539px){
-    &__header{
-        .header__menu{
-            nav{
-                ul{
-                    display: none;
-                }
-            }
-        }
-        .header__logo{
-            .contenedor__logo{
-                display: flex;
-                justify-content: flex-end;
-                width: 100%;
-            }
-        }
-    }
-}*/
+@media (min-width: 320px) and (max-width: 539px) {
+  .tienda__header .header__menu {
+    display: none; } }
+
+@media (min-width: 320px) and (max-width: 539px) {
+  .tienda__header .header__logo .contenedor__logo {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%; } }
+
 .producto__main {
   display: flex;
   flex-direction: column;
