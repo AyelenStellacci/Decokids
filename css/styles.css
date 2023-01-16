@@ -864,7 +864,8 @@ body {
     flex-direction: column; }
     .nosotros__texto2 .texto {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      padding: 0px; }
       .nosotros__texto2 .texto p {
         width: 90%; }
   .nosotros__logros {
