@@ -144,7 +144,13 @@ footer {
   text-decoration: none;
   color: #bc422b;
   padding-bottom: .5em;
-  border-bottom: .2em solid #525252;
+  justify-content: center;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 4px;
+  border-color: #D6492B;
+  border-style: dotted;
   font-size: 1em;
   font-family: "Poppins",sans-serif;
   overflow-y: hidden !important; }
